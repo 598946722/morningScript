@@ -52,7 +52,7 @@ weather, low, high = get_weather()
 temperature = low, "~", high, "℃"
 data = {
   "today": {
-    "value": today
+    "value": '1'
   },
   "weather":{
     "value": weather
