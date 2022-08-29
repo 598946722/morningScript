@@ -52,9 +52,11 @@ weather, low, high = get_weather()
 
 lists = [str(low), "~", str(high), "℃"]
 temperature = ''.join(lists)
+
+
 data = {
   "today": {
-    "value": "xx"
+    "value": "更爱你的一天鸭~"
   },
   "weather":{
     "value": weather
