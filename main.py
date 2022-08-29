@@ -48,6 +48,8 @@ client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
 weather, low, high = get_weather()
+
+temperature = low, "~", high, "℃"
 data = {
   "today": {
     "value": today
@@ -59,7 +61,7 @@ data = {
     "value": city
   },
   "temperature":{
-    "value": low + "~" high + "℃"
+    "value": temperature
   },
   "love_days":{
     "value": get_count(), 
