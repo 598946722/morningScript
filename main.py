@@ -50,7 +50,7 @@ wm = WeChatMessage(client)
 weather, low, high = get_weather()
 data = {
   "today": {
-    "value": datetime.now()
+    "value": today
   },
   "weather":{
     "value": weather
@@ -62,15 +62,15 @@ data = {
     "value": low + "~" high + "℃"
   },
   "love_days":{
-    "value":get_count(), 
-    "color":get_random_color()
+    "value": get_count(), 
+    "color": get_random_color()
   },
   "birthday_left":{
-    "value":get_birthday()
+    "value": get_birthday()
   },
   "words":{
-    "value":get_words(), 
-    "color":get_random_color()
+    "value": get_words(), 
+    "color": get_random_color()
   }
 }
 res = wm.send_template(user_id, template_id, data)
